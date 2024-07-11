@@ -6,10 +6,10 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(plugin = {"html:target/cucumber-reports/cucumber-html-report.html", "json:target/cucumber.json",
         "rerun:target/failed.txt",
         "pretty", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
-        features = "src/test/com/keitestproj/features",
+        features = "src/test/java/com/keitestproj/features",
         glue = {"com.keitestproj.steps", "com.hooks"},
         tags = "@RunTest",
-        dryRun = true
+        dryRun = false
 )
 
 public class RunTest extends AbstractTestNGCucumberTests {
