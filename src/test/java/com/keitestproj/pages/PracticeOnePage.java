@@ -15,13 +15,19 @@ public class PracticeOnePage {
         PageFactory.initElements(WebDriverUtils.driver, this);
     }
 
+    /* TABLE TITLE*/
     @FindBy(xpath = "//h2[contains(text(), 'List of Countries, Capitals, Currencies and Languages')]")
     public WebElement tableTitle;
 
+    /* TABLE HEADERS */
     @FindBy(xpath = "//table[@id='countries']/tbody/tr[1]/td")
     public List<WebElement> tableHeaders;
 
-
+    /**
+     *
+     * @param text
+     * @return
+     */
     public static WebElement dynamicTextLocator(String text) {
         return WebDriverUtils.driver.findElement(By.xpath("//*[contains(text(),'"+ text + "')]//ancestor::tr/td/input"));
 

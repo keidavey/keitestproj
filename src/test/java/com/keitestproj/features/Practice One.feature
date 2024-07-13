@@ -1,6 +1,6 @@
 Feature: Practice One
 
-  @RunTest
+  @RunTest @KD
   Scenario: Table Scenario
     Given a user is on the "https://cosmocode.io/automation-practice-webtable/" page
     When the user verifies the title of the table is "List of Countries, Capitals, Currencies and Languages"
