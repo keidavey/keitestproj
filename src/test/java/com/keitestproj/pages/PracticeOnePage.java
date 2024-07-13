@@ -21,6 +21,7 @@ public class PracticeOnePage {
     @FindBy(xpath = "//table[@id='countries']/tbody/tr[1]/td")
     public List<WebElement> tableHeaders;
 
+
     public static WebElement dynamicTextLocator(String text) {
         return WebDriverUtils.driver.findElement(By.xpath("//*[contains(text(),'"+ text + "')]//ancestor::tr/td/input"));
 
