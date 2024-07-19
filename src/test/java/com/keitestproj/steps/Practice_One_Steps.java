@@ -34,7 +34,7 @@ public class Practice_One_Steps {
 
     @And("the user clicks the visited checkbox for {string} and {string}")
     public void the_user_clicks_the_visited_checkbox_for_and(String afghanistanText, String andorraText) throws InterruptedException {
-        Thread.sleep(4000);
+        Thread.sleep(5000);
         PracticeOnePage.dynamicTextLocator(afghanistanText).click();
         PracticeOnePage.dynamicTextLocator(andorraText).click();
     }
